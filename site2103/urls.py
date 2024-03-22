@@ -19,8 +19,9 @@ from django.urls import path
 from hello import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
     
-    path('hello', views.index, name='hello'),
-    path('helloqqqwqw', views.index, name='hello'),
+    path('admin/product', views.adminAddGood, name='adminAddGood'),
+    # path('hello', views.index, name='hello'),
+    # path('helloqqqwqw', views.index, name='hello'),
 ]
