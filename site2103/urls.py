@@ -22,6 +22,11 @@ urlpatterns = [
     # path('admin/', admin.site.urls),
     
     path('admin/product', views.adminAddGood, name='adminAddGood'),
+    path('admin/product/<int:id>/edit', views.adminEditGood, name='adminEditGood'),
+    path('admin/product/<int:id>/del', views.adminDelGood, name='adminDelGood'),
+
+    path('product/<int:id>', views.getProduct, name='get_product'),
+
     # path('hello', views.index, name='hello'),
     # path('helloqqqwqw', views.index, name='hello'),
 ]
